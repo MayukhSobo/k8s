@@ -27,7 +27,7 @@ Check out my [YouTube channel](#) for more interactive and visual learning exper
 Contributions are welcome! If you have suggestions, improvements, or issues, feel free to open a pull request or an issue.
 
 ## 📜 License
-This project is licensed under [INSERT LICENSE TYPE]. See the [LICENSE](#) for more details.
+This project is licensed under MIT. See the [LICENSE](#) for more details.
 
 ## 📬 Contact
 Follow us on [Social Media/YouTube](#). For queries and collaborations, reach out to us at [Contact Information].
