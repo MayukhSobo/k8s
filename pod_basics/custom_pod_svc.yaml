@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: custom-pod-service
+  namespace: mayukh-workloads
+spec:
+  selector:
+    run: mayukh-custom-pod
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

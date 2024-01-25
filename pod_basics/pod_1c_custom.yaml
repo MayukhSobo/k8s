@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: mayukh-custom-pod-complete
+  namespace: mayukh-workloads
+  labels:
+    run: mayukh-custom-pod
+spec:
+  containers:
+    - name: kserver
+      image: mayukhsobo/k8s-server:0.2
+      imagePullPolicy: Always
+      # command: ["printenv"]
+      # args: ["HOSTNAME", "KUBERNETES_PORT"]
+      ports:
+      - containerPort: 8080
+      resources:
+        requests:
+          memory: "64Mi"
+          cpu: "250m"
+        limits:
+          memory: "128Mi"
+          cpu: "500m"
+  dnsPolicy: ClusterFirst
+  restartPolicy: OnFailure
